@@ -1,4 +1,4 @@
-def Appointment 
+class Appointment 
   
   @@all = []
   
