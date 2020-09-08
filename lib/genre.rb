@@ -8,5 +8,15 @@ class Genre
     @@all << name
   end
   
+  def self.all
+    @@all
+  end
   
+  def songs
+    Songs.all.select {|song| song.genre == self}
+  end
+  
+  def artists
+    Genre.all.collect {|song|
+
 end
